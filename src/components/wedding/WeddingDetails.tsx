@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { useEffect, useState } from 'react';
+import { } from 'react';
 import canalBoatImg from '@/assets/canal-boat.jpg';
 import restaurantImg from '@/assets/restaurant.jpg';
 import { MapPin, Clock, Anchor, UtensilsCrossed } from 'lucide-react';

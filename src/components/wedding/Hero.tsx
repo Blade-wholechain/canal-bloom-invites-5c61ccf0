@@ -76,7 +76,6 @@ export default function Hero() {
           Amsterdam, The Netherlands
         </p>
         <Countdown />
-        </p>
 
         <a
           href="#story"
