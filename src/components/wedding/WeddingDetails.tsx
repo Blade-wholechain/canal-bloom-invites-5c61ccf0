@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { MapPin, Clock, Heart, Sparkles } from 'lucide-react';
+import brasserie from '@/assets/brasserie-paardenburg.png';
 
 export default function WeddingDetails() {
   const ref = useScrollAnimation();
@@ -14,6 +15,23 @@ export default function WeddingDetails() {
           <p className="text-muted-foreground italic font-serif text-lg">Een dag vol liefde, champagne en witte rozen</p>
         </div>
 
+        {/* Venue illustration */}
+        <div className="scroll-animate mb-16">
+          <div className="relative max-w-3xl mx-auto">
+            <img
+              src={brasserie}
+              alt="Brasserie Paardenburg — illustratie van de locatie"
+              className="w-full h-auto mix-blend-multiply"
+              loading="lazy"
+            />
+            <div className="text-center mt-6">
+              <p className="text-xs tracking-[0.3em] uppercase text-eucalyptus mb-2">De locatie</p>
+              <h3 className="font-serif text-2xl md:text-3xl font-light">Brasserie Paardenburg</h3>
+              <div className="w-12 h-px bg-gold mx-auto mt-4" />
+            </div>
+          </div>
+        </div>
+
         {/* Two cards */}
         <div className="grid md:grid-cols-2 gap-8 mt-20">
           <div className="scroll-animate-left">
@@ -25,7 +43,7 @@ export default function WeddingDetails() {
               <h3 className="font-serif text-2xl mb-4">Het Ja-woord</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p className="flex items-center gap-2"><Clock size={14} /> 14:00 uur</p>
-                <p className="flex items-center gap-2"><MapPin size={14} /> Locatie wordt nog bekendgemaakt</p>
+                <p className="flex items-center gap-2"><MapPin size={14} /> Brasserie Paardenburg, Ouderkerk a/d Amstel</p>
               </div>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                 Een intieme ceremonie omringd door witte rozen en eucalyptus. We kijken ernaar uit dit moment met jullie te delen.
@@ -42,7 +60,7 @@ export default function WeddingDetails() {
               <h3 className="font-serif text-2xl mb-4">Vier het met ons</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p className="flex items-center gap-2"><Clock size={14} /> Vanaf de avond</p>
-                <p className="flex items-center gap-2"><MapPin size={14} /> Locatie wordt nog bekendgemaakt</p>
+                <p className="flex items-center gap-2"><MapPin size={14} /> Brasserie Paardenburg, Ouderkerk a/d Amstel</p>
               </div>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                 Een avond vol champagne, dans en onvergetelijke momenten. Dresscode en details volgen binnenkort.
